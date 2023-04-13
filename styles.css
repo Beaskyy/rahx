@@ -23,6 +23,29 @@ small {
   font-weight: 500;
 }
 
+.bg-image {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.81),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("https://rahxent.com/wp-content/uploads/2023/03/recordingggg.jpg");
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.fa-solid {
+  font-size: 30px;
+  transition: all 500ms ease;
+}
+
 /* New Release */
 
 #new-release {
@@ -44,18 +67,25 @@ small {
   font-weight: 700;
 }
 
-button {
+button, .button {
   background-color: transparent;
   color: white;
   padding: 5px 10px;
   border-radius: 20px !important;
   border: 0.5px solid white;
   font-weight: 500;
+  text-decoration: none;
 }
 
-button:hover {
+button:hover, .button:hover {
   background-color: white;
   color: #000000;
+}
+
+.mission {
+  color: white;
+  border-top: 2px solid #23002d;
+  padding-top: 15px;
 }
 
 label {
@@ -88,4 +118,46 @@ textarea {
 
 footer {
   background-color: #0b090c;
+}
+
+/* navbar becomes mobile sidebar under lg breakpoint */
+@media (max-width: 992px) {
+
+  .nav-link {
+    color: #000000 !important;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+    
+  .navbar-collapse.collapsing .navbar-nav {
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: -45%;
+      transition: all 0.2s ease;
+  }
+
+  .navbar-collapse.show .navbar-nav {
+    padding-top: 50px;
+    background-color: white;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      flex-direction: column;
+      height: 100vh;
+      z-index: 999;
+      width: 65%;
+      transition: left 0.35s ease;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}
+
+.navbar-toggler {
+  background-color: transparent !important;
+}
+
+.fa-xmark {
+  color: transparent;
 }
