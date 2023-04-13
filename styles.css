@@ -82,10 +82,18 @@ button:hover, .button:hover {
   color: #000000;
 }
 
+.merchandise {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .mission {
   color: white;
   border-top: 2px solid #23002d;
   padding-top: 15px;
+  /* max-width: 700px !important; */
 }
 
 label {
@@ -100,6 +108,7 @@ textarea {
   width: 100%;
   padding: 8px;
   border: 2px solid white;
+  color: #fff;
 }
 
 .submit-btn {
@@ -122,11 +131,17 @@ footer {
 
 /* navbar becomes mobile sidebar under lg breakpoint */
 @media (max-width: 992px) {
+  .mobile-nav {
+    display: block;
+  }
 
   .nav-link {
-    color: #000000 !important;
     font-weight: 600;
     margin: 10px 0;
+  }
+
+  .navbar-brand {
+    z-index: 999;
   }
     
   .navbar-collapse.collapsing .navbar-nav {
@@ -140,14 +155,14 @@ footer {
 
   .navbar-collapse.show .navbar-nav {
     padding-top: 50px;
-    background-color: white;
+    background-color: #000000;
       position: fixed;
       top: 0;
       bottom: 0;
       left: 0;
       flex-direction: column;
       height: 100vh;
-      z-index: 999;
+      z-index: 99;
       width: 65%;
       transition: left 0.35s ease;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
