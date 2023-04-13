@@ -2,11 +2,9 @@ const bars = document.querySelector(".fa-bars");
 const times = document.querySelector(".fa-xmark");
 
 window.onload = () => (times.style.display = "none");
-setTimeout(() => {
-  times.style.color = "white";
-}, 1000);
 
 bars.addEventListener("click", () => {
+  times.style.color = "white";
   bars.style.display = "none";
   times.style.display = "block";
 });
