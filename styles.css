@@ -176,3 +176,8 @@ footer {
 .fa-xmark {
   color: transparent;
 }
+
+/* Recording and Production */
+#record-and-production {
+  background-color: #262626;
+}
