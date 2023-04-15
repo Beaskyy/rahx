@@ -158,8 +158,8 @@ textarea {
   background-color: white;
   color: #23002d;
   font-weight: 600;
-  padding: 5px 10px;
-  border-radius: 20px !important;
+  padding: 10px 15px;
+  border-radius: 40px !important;
   text-decoration: none;
   transition: 500ms all ease;
 }
