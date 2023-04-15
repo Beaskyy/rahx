@@ -154,6 +154,20 @@ textarea {
   font-weight: 600;
 }
 
+.contact-btn {
+  background-color: white;
+  color: #23002d;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 20px !important;
+  text-decoration: none;
+  transition: 500ms all ease;
+}
+
+.contact-btn:hover {
+  color: #23002d;
+  letter-spacing: 0.5px;
+}
 .connect {
   font-size: 10px;
   color: white;
