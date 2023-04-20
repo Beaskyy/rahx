@@ -181,6 +181,17 @@ textarea {
   font-family: "Tilt Prism", cursive;
 }
 
+.view-all {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.view-all:hover {
+  color: #f7f7f7;
+}
+
 footer {
   background-color: #0b090c;
 }
